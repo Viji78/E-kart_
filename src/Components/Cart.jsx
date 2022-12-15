@@ -22,11 +22,16 @@ const Cart = () => {
     }
 
 
-
+    const NoData=() =>{
+        return (
+            <h1>No item.......</h1>
+        )
+    }
 
     const Cart_Product = useSelector((state) => state.handleCart)
 
     console.log(Cart_Product)
+
 
     const ShowCart = () => {
         return (
@@ -70,7 +75,8 @@ const Cart = () => {
         <div>
             <div className="container py-5">
                 <div className="row py-5">
-                     <ShowCart/>
+                     
+        {Cart_Product.length===0 ? <NoData/> : <ShowCart/>}
                 </div>
             </div>
 
