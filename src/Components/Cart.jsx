@@ -30,9 +30,6 @@ const Cart = () => {
 
     const Cart_Product = useSelector((state) => state.handleCart)
 
-    console.log(Cart_Product)
-
-
     const ShowCart = () => {
         return (
             <>
