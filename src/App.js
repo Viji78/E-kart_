@@ -8,6 +8,7 @@ import Product from './Components/Product';
 import Cart from './Components/Cart';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import PageNotFound from "./Components/PageNotFound"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route exact path="/about" component={About}/>
       <Route exact path="/contact" component={Contact}/>
       <Route exact path="/cart" component={Cart}/>
+      <Route exact path="/*" component={PageNotFound}/>
 
     </Switch>
     
