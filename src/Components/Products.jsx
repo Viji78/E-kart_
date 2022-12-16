@@ -49,6 +49,13 @@ const Products = () => {
         const updatedList = data.filter((x)=>x.category === cat);
         setFilter(updatedList);
     }
+
+    // const LessProduct = (cat) => {
+    //     const updatedList = data.filter((x)=>x.price<=50);
+    //     setFilter(updatedList);
+    // }
+
+   
   
     const ShowProducts = () => {
         return (
@@ -59,6 +66,9 @@ const Products = () => {
                     <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("women's clothing")}>Women's Clothing</button>
                     <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("jewelery")}>Jewelery Clothig</button>
                     <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("electronics")}>Electronic</button>
+                    {/* <button className="btn btn-outline-dark me-2" onClick={()=>LessProduct(data)}>LessThan50</button> */}
+                    <button className="btn btn-outline-dark me-2" onClick={()=>setFilter(data.filter((x)=>x.price<=50))}>LessThan50</button>
+
                 </div>
                 {filter.map((product) => {
                     return (
