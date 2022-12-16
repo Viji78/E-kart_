@@ -3,3 +3,19 @@
   font-size: 20px;
 }
 
+
+#formdesign{
+  width:auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow:5px 5px 5px rgba(0, 0, 0, 0.322);
+  display: flex;
+  justify-content: center;
+}
+
+#fromdiv{
+  height: 550px;;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
