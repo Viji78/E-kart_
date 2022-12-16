@@ -60,7 +60,6 @@ const Products = () => {
 
        const LessProduct=()=> setFilter(data.filter((x)=>x.price<=50))
 
-  
     const ShowProducts = () => {
         return (
             <>
