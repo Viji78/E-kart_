@@ -14,7 +14,6 @@
 
 #fromdiv{
   height: 550px;;
-  background-color: blue;
   display: flex;
   align-items: center;
   justify-content: center;

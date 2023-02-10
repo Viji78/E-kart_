@@ -1,15 +1,15 @@
 import './App.css';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
-// import Products from './Components/Products';
 import {Switch, Route} from 'react-router-dom';
 import Products from './Components/Products';
 import Product from './Components/Product';
 import Cart from './Components/Cart';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import Login from './Components/Login'
-import PageNotFound from "./Components/PageNotFound"
+import Login from './Components/Login';
+import Register from './Components/Register';
+import PageNotFound from "./Components/PageNotFound";
 
 
 function App() {
@@ -24,9 +24,8 @@ function App() {
       <Route exact path="/contact" component={Contact}/>
       <Route exact path="/cart" component={Cart}/>
       <Route exact path="/login" component={Login}/>
-
+      <Route exact path="/register" component={Register}/>
       <Route exact path="/*" component={PageNotFound}/>
-
 
     </Switch>
     
